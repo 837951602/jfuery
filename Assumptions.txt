@@ -14,3 +14,6 @@ All the mentioned (sub-)expressions remain unchanged.
 * Array.prototype[""] is undefined
 * (1,eval)(unescape("alert(0)%0aalert(0)")) alerts 0 for twice
   (instead of generating EvalError or Syntax Error)
+* ("1".split().join())["".length] is "1"
+* delete works
+* 0..filter, false.filter, "".filter are undefined
