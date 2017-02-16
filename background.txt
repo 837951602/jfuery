@@ -1,0 +1,13 @@
+As I see https://github.com/fasttime/jquery-screwed, I decided to make a shorter one.
+I thought it should be easy to reach 14*filesize(Resultly 1,022,478/86,644=11.800909468630257144176169151932) 
+but failed for some times: <down are my ways>
+I thought of (function(x){push(x);return argument.callee})(arg1)(arg2)(arg3)...(argn)
+but when I ran it on Maxthon it says "Stack size exceeded".
+So I had to let [][[]] be the function so I can directly call the function with least chars(I don't need argn=undefined)
+And use '+' to connect two function call to replace ','.
+
+Source can be found by:
+ 1. find the first occurance of ()+[][[]]
+ 2. copy chars before the occurance(excluding the occurance itself)
+ 3. paste and remove the first [
+ 4. evaluate it
