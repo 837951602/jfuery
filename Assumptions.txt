@@ -1,0 +1,16 @@
+All the mentioned (sub-)expressions remain unchanged.
+* It's a browser with Javascript engine
+* [].filter+[] is in one of
+   1. function filter() { [native code ] }
+  ,
+   1. function filter() {
+   2.     [native code ]
+   3. }
+  ,
+   1.
+   2. function filter() {
+   3.     [native code ]
+   4. }
+* Array.prototype[""] is undefined
+* (1,eval)(unescape("alert(0)%0aalert(0)")) alerts 0 for twice
+  (instead of generating EvalError or Syntax Error)
