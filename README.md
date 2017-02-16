@@ -1,0 +1,2 @@
+# jfuery
+jsfuck jQuery
