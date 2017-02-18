@@ -15,7 +15,7 @@ function w(v) {
   ][v&15]);
 }
 for (var i=0; i<db.length; i++) {
-  if (i%50 == 0) {
+  if (i%500 == 0) {
     if (i) out.Write ('()');
     out.Write ('+[][[]]');
   }
